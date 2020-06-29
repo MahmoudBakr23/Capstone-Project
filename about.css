@@ -6,3 +6,298 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.first-navbar {
+  display: grid;
+  width: 100%;
+  background-color: #272a31;
+  justify-content: end;
+  padding: 5px 0;
+}
+
+.second-navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.first-navbar ul,
+.navbar-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0 10rem;
+}
+
+.navbar-nav ul {
+  margin: 0 9rem;
+  padding: 10px 0;
+}
+
+.navbar-logo {
+  margin: 0 10rem;
+}
+
+.navbar-logo img {
+  width: 150px;
+  margin-top: -1rem;
+}
+
+.first-navbar li {
+  padding: 0 10px;
+}
+
+.navbar-nav li {
+  padding: 0 30px;
+}
+
+.first-navbar li .diff {
+  padding: 0 10px;
+}
+
+.navbar-nav li .special {
+  border: 3px solid #ec5242;
+  padding: 10px 20px;
+  color: #ec5242;
+}
+
+.navbar-nav .active {
+  color: #ec5242;
+}
+
+.first-navbar a,
+.navbar-nav a {
+  color: #d3d3d3;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.first-navbar a {
+  color: #d3d3d3;
+}
+
+.navbar-nav a {
+  color: #272a31;
+}
+
+main {
+  background: linear-gradient(rgba(212, 212, 212, 0.9), rgba(212, 212, 212, 0.9)), url(./Images/main-bg-4.png);
+  background-position: center center;
+  background-size: small;
+}
+
+.main-text h3,
+.main-text p,
+.course-heading,
+.course-text,
+.course-details {
+  margin: 0;
+}
+
+.main-text {
+  padding: 5rem 15rem;
+  text-align: center;
+}
+
+.main-text h3,
+.main-text .head {
+  color: #ec5242;
+}
+
+.main-text .head {
+  font-family: 'cocogoose pro';
+  font-size: 3.5em;
+  line-height: 60px;
+  padding: 1rem 0;
+  letter-spacing: -2px;
+}
+
+.main-text span {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+
+.bordered-p {
+  border: 2px solid #d3d3d3;
+  background: white;
+  color: #272a31;
+  width: 100%;
+  padding: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.contact {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  color: #272a31;
+  padding: 0.5rem 0;
+}
+
+.contact a {
+  color: #ec5242 !important;
+  font-style: italic;
+}
+
+.main-text a {
+  text-decoration: underline;
+  color: #272a31;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  word-spacing: -1px;
+}
+
+.course-section {
+  padding: 3rem 10rem;
+  border: 1px solid #d3d3d3;
+  box-shadow: rgba(212, 212, 212, 0.9) -10px 5px 10px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 60px;
+  grid-column-gap: 5px;
+  width: 100%;
+}
+
+.course-grid-heading {
+  grid-column: 1/ -1;
+  margin: 0 auto;
+  color: #272a31;
+  font-size: 26px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+.course-content {
+  text-align: center;
+  padding: 1rem 0;
+  border: 2px solid #d3d3d3;
+}
+
+.course-heading {
+  color: #272a31;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.course-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 15px;
+  padding-top: 1rem;
+  color: #ec5242;
+  font-style: italic;
+}
+
+.course-details {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #272a31;
+  padding: 1rem 0;
+}
+
+.course-content a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #272a31;
+  background-color: #d3d3d3;
+  padding: 0.5rem 3rem;
+  font-weight: 600;
+}
+
+.additional {
+  padding: 3rem 10rem;
+}
+
+.additional-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+.additional-heading,
+.additional-p {
+  grid-column: 1/ -1;
+  margin: 0 auto;
+}
+
+.additional-heading {
+  color: #272a31;
+  font-size: 26px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.additional-p {
+  color: #272a31;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.additional-course {
+  margin: 2rem auto;
+}
+
+.unity {
+  text-align: center;
+  background: linear-gradient(rgba(241, 9, 9, 0.7), rgba(241, 9, 9, 0.7)), url(./Images/unity-learn.webp);
+  background-size: cover;
+  background-position: center center;
+  padding: 3rem 10rem;
+}
+
+.unity h2,
+.c-sharp h2 {
+  font-size: 2rem;
+  padding: 0 3rem;
+  font-family: 'Lato', sans-serif;
+  color: #d3d3d3;
+  width: 100%;
+}
+
+.c-sharp {
+  text-align: center;
+  background: linear-gradient(rgba(241, 9, 9, 0.7), rgba(241, 9, 9, 0.7)), url(./Images/c-sharp.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 3rem 10rem;
+}
+
+footer {
+  width: 100%;
+  background-color: #272a31;
+}
+
+.footer-flexbox {
+  display: flex;
+  justify-content: start;
+  padding: 2rem 15rem;
+}
+
+.footer-details p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #d3d3d3;
+  font-weight: 600;
+}
+
+.footer-details a{
+  text-decoration: none;
+  color: #d3d3d3;
+}
