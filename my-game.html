@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/032ed71b0e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="my-game.css">
+    <title>My Journey</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/F.WebGL.json", {onProgress: UnityProgress});
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="first-navbar">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                <li><a href="cer.html" class="diff">Certificate</a></li> 
+            </ul>
+        </div>
+        <div class="second-navbar">
+        <div class="navbar-logo">
+            <a href="#"><img src="./Images/logo.png" alt="myJourney-logo"></a>
+        </div>
+            <div class="navbar-nav">
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="my-game.html" class="special">My Game</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="webgl-content">
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          <div class="title">Colors Experiments</div>
+        </div>
+      </div>
+</body>
+</html>
