@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+nav {
+  box-shadow: #d3d3d3 5px 5px 5px;
+}
+
 .first-navbar {
   display: grid;
   width: 100%;

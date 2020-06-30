@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+nav {
+  box-shadow: #d3d3d3 5px 5px 5px;
+}
+
 .first-navbar {
   display: grid;
   width: 100%;
@@ -154,7 +158,7 @@ main {
 .course-section {
   padding: 3rem 10rem;
   border: 1px solid #d3d3d3;
-  box-shadow: rgba(212, 212, 212, 0.9) -10px 5px 10px;
+  box-shadow: #d3d3d3 5px 5px 5px;
 }
 
 .course-grid {
