@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'cocogoose pro';
+  src: url(./Fonts/Cocogoose-Pro-Regular-trial.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -90,6 +95,10 @@ main {
   background: linear-gradient(rgba(212, 212, 212, 0.9), rgba(212, 212, 212, 0.9)), url(./Images/main-bg-4.png);
   background-position: center center;
   background-size: small;
+}
+
+main .fa-bars {
+  display: none;
 }
 
 .main-text h3,
@@ -216,7 +225,7 @@ main {
   font-size: 14px;
   color: #272a31;
   background-color: #d3d3d3;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   font-weight: 600;
 }
 
@@ -304,4 +313,270 @@ footer {
 .footer-details a{
   text-decoration: none;
   color: #d3d3d3;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1138px) {
+  .second-navbar {
+    justify-content: space-evenly;
+  }
+  
+  .navbar-logo {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-nav ul {
+    margin: 0;
+  }
+
+  .navbar-nav li {
+    padding: 0 2rem;
+  }
+
+  .main-text {
+    padding: 1rem 8rem;
+    text-align: center;
+  }
+
+  .main-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .main-text .head {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .main-text .bordered-p {
+    width: 100%;
+  }
+
+  .course-grid-heading {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .course-section {
+    padding: 2rem 8rem;
+  }
+
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+
+  .course-items {
+    grid-column: 1/ -1;
+    padding: 0.5rem;
+  }
+
+  .additional {
+    padding: 2rem 8rem;
+  }
+
+  .additional-heading {
+    font-size: 2rem;
+  }
+
+  .unity,
+  .c-sharp {
+    padding: 5rem;
+  }
+  
+  .unity h2,
+  .c-sharp h2 {
+    font-size: 2rem;
+    padding: 0 3rem;
+  }
+
+  .footer-flexbox {
+    display: flex;
+    justify-content: start;
+    padding: 2rem 1rem;
+  }
+
+  .footer-flexbox img {
+    width: 120px;
+  }
+
+  .footer-details p {
+    font-size: 12px;
+    margin: 0.3rem 0;
+  }
+}
+
+@media only screen and (min-width: 533px) and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  main .fa-bars {
+    display: block;
+    font-size: 2rem;
+    color: #272a31;
+    padding: 1rem;
+  }
+
+  .main-text {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .main-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .main-text .head {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .main-text .bordered-p {
+    width: 100%;
+  }
+
+  .course-grid-heading {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .course-section {
+    padding: 2rem 1rem;
+  }
+
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+
+  .course-items {
+    grid-column: 1/ -1;
+    padding: 0.5rem;
+  }
+
+  .additional {
+    padding: 2rem 1rem;
+  }
+
+  .additional-heading {
+    font-size: 2rem;
+  }
+
+  .unity,
+  .c-sharp {
+    padding: 1rem;
+  }
+  
+  .unity h2,
+  .c-sharp h2 {
+    font-size: 2rem;
+    padding: 0 3rem;
+  }
+
+  .footer-flexbox {
+    display: flex;
+    justify-content: start;
+    padding: 2rem 1rem;
+  }
+
+  .footer-flexbox img {
+    width: 120px;
+  }
+
+  .footer-details p {
+    font-size: 12px;
+    margin: 0.3rem 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 532px) {
+  nav {
+    display: none;
+  }
+
+  main .fa-bars {
+    display: block;
+    font-size: 2rem;
+    color: #272a31;
+    padding: 1rem;
+  }
+
+  .main-text {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .main-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .main-text .head {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+
+  .main-text .bordered-p {
+    width: 100%;
+  }
+
+  .course-grid-heading {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .course-section {
+    padding: 2rem 1rem;
+  }
+
+  .course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+
+  .course-items {
+    grid-column: 1/ -1;
+    padding: 0.5rem;
+  }
+
+  .additional {
+    padding: 2rem 1rem;
+  }
+
+  .additional-grid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+  }
+
+  .additional-heading {
+    font-size: 1.5rem;
+  }
+
+  .unity,
+  .c-sharp {
+    padding: 1rem;
+  }
+  
+  .unity h2,
+  .c-sharp h2 {
+    font-size: 2rem;
+    padding: 0 3rem;
+  }
+
+  .footer-flexbox {
+    display: flex;
+    justify-content: start;
+    padding: 2rem 1rem;
+  }
+
+  .footer-flexbox img {
+    width: 120px;
+  }
+
+  .footer-details p {
+    font-size: 12px;
+    margin: 0;
+  }
 }
