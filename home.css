@@ -13,7 +13,6 @@ nav {
 
 .first-navbar {
   display: grid;
-  width: 100%;
   background-color: #272a31;
   justify-content: end;
   padding: 5px 0;
@@ -21,7 +20,6 @@ nav {
 
 .second-navbar {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   padding: 20px 0;
 }
@@ -92,6 +90,10 @@ main {
   background-size: small;
 }
 
+main .fa-bars {
+  display: none;
+}
+
 .main-text h3,
 .main-text p,
 .inspire h4,
@@ -157,7 +159,6 @@ main {
   background: url(./Images/bg-3.png);
   background-position: center center;
   background-size: small;
-  width: 100%;
 }
 
 .path-grid {
@@ -299,7 +300,6 @@ main {
   padding: 1rem 10rem;
   background-color: #272a31;
   justify-content: center;
-  width: 100%;
 }
 
 .important-heading {
@@ -328,7 +328,6 @@ main {
 }
 
 footer {
-  width: 100%;
   background-color: #d3d3d3;
 }
 
@@ -350,3 +349,450 @@ footer {
   color: #272a31;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1138px) {
+  .second-navbar {
+    justify-content: space-evenly;
+  }
+  
+  .navbar-logo {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-nav ul {
+    margin: 0;
+  }
+
+  .navbar-nav li {
+    padding: 0 2rem;
+  }
+
+  .main-text {
+    padding: 1rem;
+    text-align: start;
+  }
+
+  .main-text h3 {
+    font-size: 2rem;
+  }
+
+  .main-text .head {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .main-text .bordered-p {
+    width: 50%;
+  }
+
+  .main-text .date {
+    font-size: 1.5rem;
+  }
+
+  .journey-path {
+    padding: 4rem 10rem;
+    background: url(./Images/bg-3.png);
+    background-position: center center;
+    background-size: small;
+  }
+  
+  .path-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+
+  .path-items {
+    margin: 0 auto;
+  }
+
+  .path-footer {
+    grid-column: 1/ -1;
+    grid-row: 5;
+  }
+
+  .inspiring-path {
+    padding: 1rem 0;
+  }
+
+  .inspiration-items {
+    display: flex;
+    padding: 0 2rem;
+  }
+
+  .inspire h4,
+  .inspire h6,
+  .inspire p {
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+  }
+  
+  .inspiration-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+  }
+
+  .inspiration-items .persons {
+    width: 120px;
+    height: 140px;
+  }
+
+  .inspiration-items .absolute-img {
+    position: relative;
+    left: 60px;
+    bottom: 10px;
+    z-index: -1;
+  }
+
+  .important {
+    padding: 1rem;
+  }
+  
+  .important-heading {
+    grid-column: 1/ -1;
+    margin: 2rem auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    color: #d3d3d3;
+  }
+  
+  .important-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
+  
+  .important-items img {
+    width: 100px;
+    height: 56px;
+  }
+  
+  .important-items .odd {
+    width: 120px;
+    height: 70px;
+    margin: 0 0.1rem;
+  }
+
+  .footer-flexbox {
+    display: flex;
+    justify-content: start;
+    padding: 2rem 1rem;
+  }
+
+  .footer-flexbox img {
+    width: 120px;
+  }
+
+  .footer-details p {
+    font-size: 12px;
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 533px) and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  main .fa-bars {
+    display: block;
+    font-size: 2.5rem;
+    color: #272a31;
+    padding: 1rem;
+  }
+  
+  .main-text {
+    padding: 1rem;
+    text-align: start;
+  }
+
+  .main-text h3 {
+    font-size: 2rem;
+  }
+
+  .main-text .head {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .main-text .bordered-p {
+    width: 100%;
+  }
+
+  .main-text .date {
+    font-size: 1.5rem;
+  }
+
+  .journey-path {
+    padding: 2rem 1rem;
+    background: url(./Images/bg-3.png);
+    background-position: center center;
+    background-size: small;
+  }
+  
+  .path-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .path-items {
+    display: flex;
+    grid-column: 1/ -1;
+    padding: 0.5rem;
+  }
+
+  .path-items h5 {
+    font-size: 0.8rem;
+    align-self: center;
+    margin: 0.5rem 1rem;
+    text-align: start;
+    width: 50px;
+  }
+
+  .path-items p {
+    font-size: 0.8rem;
+    align-self: center;
+    padding: 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .path-items a {
+    font-size: 0.8rem;
+    align-self: center;
+    padding: 0;
+  }
+
+  .path-footer {
+    grid-column: 1/ -1;
+    grid-row: 7;
+  }
+
+  .inspiring-path {
+    padding: 1rem 0;
+  }
+
+  .inspiration-items {
+    display: flex;
+    padding: 0 2rem;
+  }
+
+  .inspire h4,
+  .inspire h6,
+  .inspire p {
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+  }
+  
+  .inspiration-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+  }
+
+  .inspiration-items .persons {
+    width: 120px;
+    height: 140px;
+  }
+
+  .inspiration-items .absolute-img {
+    position: relative;
+    left: 60px;
+    bottom: 10px;
+    z-index: -1;
+  }
+
+  .important {
+    padding: 1rem;
+  }
+  
+  .important-heading {
+    grid-column: 1/ -1;
+    margin: 2rem auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    color: #d3d3d3;
+  }
+  
+  .important-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
+  
+  .important-items img {
+    width: 100px;
+    height: 56px;
+  }
+  
+  .important-items .odd {
+    width: 120px;
+    height: 70px;
+    margin: 0 0.1rem;
+  }
+
+  .footer-flexbox {
+    display: flex;
+    justify-content: start;
+    padding: 2rem 1rem;
+  }
+
+  .footer-flexbox img {
+    width: 120px;
+  }
+
+  .footer-details p {
+    font-size: 12px;
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 532px) {
+  nav {
+    display: none;
+  }
+
+  main .fa-bars {
+    display: block;
+    font-size: 2rem;
+    color: #272a31;
+    padding: 1rem;
+  }
+
+  .main-text {
+    padding: 1rem;
+    text-align: start;
+  }
+
+  .main-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .main-text .head {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+
+  .main-text .bordered-p {
+    width: 100%;
+  }
+
+  .main-text .date {
+    font-size: 1rem;
+  }
+
+  .journey-path {
+    padding: 2rem 1rem;
+    background: url(./Images/bg-3.png);
+    background-position: center center;
+    background-size: small;
+  }
+  
+  .path-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+  .path-items {
+    grid-column: 1/ -1;
+    padding: 0.5rem;
+  }
+
+  .path-items h5,
+  .path-items p,
+  .path-items a {
+    font-size: 0.8rem;
+    align-self: center;
+    margin: 0.5rem 0;
+  }
+
+  .path-footer {
+    grid-column: 1/ -1;
+    grid-row: 7;
+  }
+
+  .inspiring-path {
+    padding: 1rem 0;
+  }
+
+  .inspiration-items {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .inspire h4,
+  .inspire h6,
+  .inspire p {
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+  }
+  
+  .inspiration-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+  }
+
+  .inspiration-items .persons {
+    width: 120px;
+    height: 140px;
+  }
+
+  .inspiration-items .absolute-img {
+    position: relative;
+    left: 65px;
+    bottom: 80px;
+    z-index: -1;
+  }
+
+  .important {
+    padding: 1rem;
+  }
+  
+  .important-heading {
+    grid-column: 1/ -1;
+    margin: 2rem auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    color: #d3d3d3;
+  }
+  
+  .important-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+  }
+  
+  .important-items img {
+    width: 100px;
+    height: 56px;
+  }
+  
+  .important-items .odd {
+    width: 120px;
+    height: 70px;
+  }
+
+  .important-items .odd-1 {
+    grid-column: 1/ -1;
+    margin: 0 auto;
+  }
+
+  .footer-flexbox {
+    display: flex;
+    justify-content: start;
+    padding: 2rem 1rem;
+  }
+
+  .footer-flexbox img {
+    width: 120px;
+  }
+
+  .footer-details p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
