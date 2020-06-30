@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'cocogoose pro';
+  src: url(./Fonts/Cocogoose-Pro-Regular-trial.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
