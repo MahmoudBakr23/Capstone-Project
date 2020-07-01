@@ -1,94 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: 'cocogoose pro';
   src: url(./Fonts/Cocogoose-Pro-Regular-trial.ttf);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  box-shadow: #d3d3d3 5px 5px 5px;
-}
-
-.first-navbar {
-  display: grid;
-  width: 100%;
-  background-color: #272a31;
-  justify-content: end;
-  padding: 5px 0;
-}
-
-.second-navbar {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-.first-navbar ul,
-.navbar-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0 10rem;
-}
-
-.navbar-nav ul {
-  margin: 0 9rem;
-  padding: 10px 0;
-}
-
-.navbar-logo {
-  margin: 0 10rem;
-}
-
-.navbar-logo img {
-  width: 150px;
-  margin-top: -1rem;
-}
-
-.first-navbar li {
-  padding: 0 10px;
-}
-
-.navbar-nav li {
-  padding: 0 30px;
-}
-
-.first-navbar li .diff {
-  padding: 0 10px;
-}
-
-.navbar-nav li .special {
-  border: 3px solid #ec5242;
-  padding: 10px 20px;
-  color: #ec5242;
-}
-
-.navbar-nav .active {
-  color: #ec5242;
-}
-
-.first-navbar a,
-.navbar-nav a {
-  color: #d3d3d3;
-  text-decoration: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.first-navbar a {
-  color: #d3d3d3;
-}
-
-.navbar-nav a {
-  color: #272a31;
 }
 
 main {
@@ -97,29 +9,25 @@ main {
   background-size: small;
 }
 
-main .fa-bars {
-  display: none;
-}
-
-.main-text h3,
-.main-text p,
+.about-text h3,
+.about-text p,
 .course-heading,
 .course-text,
 .course-details {
   margin: 0;
 }
 
-.main-text {
+.about-text {
   padding: 5rem 15rem;
   text-align: center;
 }
 
-.main-text h3,
-.main-text .head {
+.about-text h3,
+.about-text .head {
   color: #ec5242;
 }
 
-.main-text .head {
+.about-text .head {
   font-family: 'cocogoose pro';
   font-size: 3.5em;
   line-height: 60px;
@@ -127,12 +35,12 @@ main .fa-bars {
   letter-spacing: -2px;
 }
 
-.main-text span {
+.about-text span {
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
-.bordered-p {
+.bordered-about-p {
   border: 2px solid #d3d3d3;
   background: white;
   color: #272a31;
@@ -156,7 +64,7 @@ main .fa-bars {
   font-style: italic;
 }
 
-.main-text a {
+.about-text a {
   text-decoration: underline;
   color: #272a31;
   font-weight: 600;
@@ -191,6 +99,12 @@ main .fa-bars {
   text-align: center;
   padding: 1rem 0;
   border: 2px solid #d3d3d3;
+  transition: 0.3s ease-in;
+}
+
+.course-content:hover {
+  transform: scaleY(1.2) scaleX(1.1);
+  background-color: #d3d3d3;
 }
 
 .course-heading {
@@ -292,7 +206,7 @@ main .fa-bars {
   padding: 3rem 10rem;
 }
 
-footer {
+.about-footer {
   width: 100%;
   background-color: #272a31;
 }
@@ -303,51 +217,33 @@ footer {
   padding: 2rem 15rem;
 }
 
-.footer-details p {
+.footer-about-details p {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   color: #d3d3d3;
-  font-weight: 600;
 }
 
-.footer-details a{
+.footer-about-details a {
   text-decoration: none;
   color: #d3d3d3;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1138px) {
-  .second-navbar {
-    justify-content: space-evenly;
-  }
-  
-  .navbar-logo {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbar-nav ul {
-    margin: 0;
-  }
-
-  .navbar-nav li {
-    padding: 0 2rem;
-  }
-
-  .main-text {
+  .about-text {
     padding: 1rem 8rem;
     text-align: center;
   }
 
-  .main-text h3 {
+  .about-text h3 {
     font-size: 1.5rem;
   }
 
-  .main-text .head {
+  .about-text .head {
     font-size: 3rem;
     line-height: 50px;
   }
 
-  .main-text .bordered-p {
+  .about-text .bordered-about-p {
     width: 100%;
   }
 
@@ -390,49 +286,28 @@ footer {
     padding: 0 3rem;
   }
 
-  .footer-flexbox {
-    display: flex;
-    justify-content: start;
-    padding: 2rem 1rem;
-  }
-
-  .footer-flexbox img {
-    width: 120px;
-  }
-
-  .footer-details p {
+  .footer-about-details p {
     font-size: 12px;
     margin: 0.3rem 0;
   }
 }
 
 @media only screen and (min-width: 533px) and (max-width: 768px) {
-  nav {
-    display: none;
-  }
-
-  main .fa-bars {
-    display: block;
-    font-size: 2rem;
-    color: #272a31;
-    padding: 1rem;
-  }
-
-  .main-text {
+  .about-text {
     padding: 1rem;
     text-align: center;
   }
 
-  .main-text h3 {
+  .about-text h3 {
     font-size: 1.5rem;
   }
 
-  .main-text .head {
+  .about-text .head {
     font-size: 3rem;
     line-height: 50px;
   }
 
-  .main-text .bordered-p {
+  .about-text .bordered-about-p {
     width: 100%;
   }
 
@@ -475,49 +350,28 @@ footer {
     padding: 0 3rem;
   }
 
-  .footer-flexbox {
-    display: flex;
-    justify-content: start;
-    padding: 2rem 1rem;
-  }
-
-  .footer-flexbox img {
-    width: 120px;
-  }
-
-  .footer-details p {
+  .footer-about-details p {
     font-size: 12px;
     margin: 0.3rem 0;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 532px) {
-  nav {
-    display: none;
-  }
-
-  main .fa-bars {
-    display: block;
-    font-size: 2rem;
-    color: #272a31;
-    padding: 1rem;
-  }
-
-  .main-text {
+  .about-text {
     padding: 1rem;
     text-align: center;
   }
 
-  .main-text h3 {
+  .about-text h3 {
     font-size: 1.5rem;
   }
 
-  .main-text .head {
+  .about-text .head {
     font-size: 2rem;
     line-height: 35px;
   }
 
-  .main-text .bordered-p {
+  .about-text .bordered-about-p {
     width: 100%;
   }
 
@@ -554,28 +408,26 @@ footer {
     font-size: 1.5rem;
   }
 
+  .additional {
+    padding: 1rem 4rem;
+  }
+
+  .additional-p {
+    text-align: center;
+  }
+
   .unity,
   .c-sharp {
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
   
   .unity h2,
   .c-sharp h2 {
     font-size: 2rem;
-    padding: 0 3rem;
+    padding: 0 4rem;
   }
 
-  .footer-flexbox {
-    display: flex;
-    justify-content: start;
-    padding: 2rem 1rem;
-  }
-
-  .footer-flexbox img {
-    width: 120px;
-  }
-
-  .footer-details p {
+  .footer-about-details p {
     font-size: 12px;
     margin: 0;
   }

@@ -1,97 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  box-shadow: #d3d3d3 5px 5px 5px;
-}
-
-.first-navbar {
-  display: grid;
-  width: 100%;
-  background-color: #272a31;
-  justify-content: end;
-  padding: 5px 0;
-}
-
-.second-navbar {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-.first-navbar ul,
-.navbar-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0 10rem;
-}
-
-.navbar-nav ul {
-  margin: 0 9rem;
-  padding: 10px 0;
-}
-
-.navbar-logo {
-  margin: 0 10rem;
-}
-
-.navbar-logo img {
-  width: 150px;
-  margin-top: -1rem;
-}
-
-.first-navbar li {
-  padding: 0 10px;
-}
-
-.navbar-nav li {
-  padding: 0 30px;
-}
-
-.first-navbar li .diff {
-  padding: 0 10px;
-}
-
-.navbar-nav li .special {
-  border: 3px solid #ec5242;
-  padding: 10px 20px;
-  color: #ec5242;
-}
-
-.navbar-nav .active {
-  color: #ec5242;
-}
-
-.first-navbar a,
-.navbar-nav a {
-  color: #d3d3d3;
-  text-decoration: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.first-navbar a {
-  color: #d3d3d3;
-}
-
-.navbar-nav a {
-  color: #272a31;
-}
-
 main {
   padding: 4rem 10rem;
-}
-
-main .fa-bars {
-  display: none;
 }
 
 .game-grid {
@@ -147,7 +55,7 @@ main .fa-bars {
   border: 5px dashed #ec5242;
 }
 
-.important {
+.important-game {
   display: flex;
   padding: 1rem 10rem;
   background-color: #272a31;
@@ -155,13 +63,13 @@ main .fa-bars {
   width: 100%;
 }
 
-.important-items {
+.important-game-items {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 20px;
 }
 
-.important-heading {
+.important-game-heading {
   margin: 2rem auto;
   font-family: 'Lato', sans-serif;
   font-size: 22px;
@@ -180,47 +88,7 @@ main .fa-bars {
   color: #ec5242;
 }
 
-footer {
-  width: 100%;
-  background-color: #d3d3d3;
-}
-
-.footer-flexbox {
-  display: flex;
-  justify-content: start;
-  padding: 2rem 10rem;
-}
-
-.footer-details p {
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  color: #272a31;
-  font-weight: 600;
-}
-
-.footer-details a{
-  text-decoration: none;
-  color: #272a31;
-}
-
 @media only screen and (min-width: 769px) and (max-width: 1138px) {
-  .second-navbar {
-    justify-content: space-evenly;
-  }
-  
-  .navbar-logo {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbar-nav ul {
-    margin: 0;
-  }
-
-  .navbar-nav li {
-    padding: 0 2rem;
-  }
-
   .game-heading {
     font-size: 24px;
   }
@@ -236,6 +104,10 @@ footer {
     margin: 2rem auto;
   }
   
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+
   .the-game {
     height: 175px;
     padding: 2rem 0.1rem;
@@ -244,7 +116,7 @@ footer {
   
   .the-game iframe {
     margin-top: -1.75rem;
-    width: 450px;
+    width: 550px;
   }
 
   .img-container {
@@ -259,34 +131,13 @@ footer {
     height: 600px;
   }
 
-  .footer-flexbox {
-    display: flex;
-    justify-content: start;
-    padding: 2rem 10rem;
-  }
-
-  .footer-flexbox img {
-    width: 120px;
-  }
-
   .footer-details p {
     font-size: 14px;
     margin: 0.3rem auto;
   }
 }
 
-@media only screen and (min-width: 533px) and (max-width: 768px) {
-  nav {
-    display: none;
-  }
-
-  main .fa-bars {
-    display: block;
-    font-size: 2rem;
-    color: #272a31;
-    padding: 1rem;
-  }
-
+@media only screen and (min-width: 621px) and (max-width: 768px) {
   main {
     padding: 1rem;
   }
@@ -317,11 +168,11 @@ footer {
     width: 400px;
   }
   
-  .important {
+  .important-game {
     padding: 1rem 2rem;
   }
   
-  .important-heading {
+  .important-game-heading {
     margin: 0 auto;
     font-size: 20px;
   }
@@ -331,34 +182,13 @@ footer {
     margin: 1rem auto;
   }
 
-  .footer-flexbox {
-    display: flex;
-    justify-content: start;
-    padding: 2rem 1rem;
-  }
-
-  .footer-flexbox img {
-    width: 120px;
-  }
-
   .footer-details p {
     font-size: 14px;
     margin: 0.2rem 0;
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 532px) {
-  nav {
-    display: none;
-  }
-
-  main .fa-bars {
-    display: block;
-    font-size: 2rem;
-    color: #272a31;
-    padding: 1rem;
-  }
-
+@media only screen and (min-width: 320px) and (max-width: 620px) {
   main {
     padding: 1rem;
   }
@@ -395,14 +225,14 @@ footer {
   
   .the-game iframe {
     margin-top: -1.75rem;
-    width: 280px;
+    width: 290px;
   }
   
-  .important {
+  .important-game {
     padding: 1rem 2rem;
   }
   
-  .important-heading {
+  .important-game-heading {
     margin: 0 auto;
     font-size: 20px;
   }
@@ -410,20 +240,5 @@ footer {
   .credit {
     font-size: 16px;
     margin: 1rem auto;
-  }
-
-  .footer-flexbox {
-    display: flex;
-    justify-content: start;
-    padding: 2rem 1rem;
-  }
-
-  .footer-flexbox img {
-    width: 120px;
-  }
-
-  .footer-details p {
-    font-size: 10px;
-    margin: 0.1rem 0;
   }
 }
