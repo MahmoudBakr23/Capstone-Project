@@ -102,21 +102,21 @@ main p {
     font-size: 16px;
     width: 80%;
   }
-  
+
   .tickets-table th,
   .tickets-table td {
     text-align: center;
     margin: 0;
   }
-  
+
   .tickets-table th {
     padding: 10px 15px;
   }
-  
+
   .tickets-table td {
     padding: 15px 0;
   }
-  
+
   .footer-tickets-details p {
     font-size: 14px;
     margin: 0.3rem auto;
@@ -128,10 +128,6 @@ main p {
     font-size: 14px;
     padding: 1rem;
     width: 85%;
-  }
-
-  .tickets-headline span {
-    font-size: 16px;
   }
 
   .tickets-headline i {
@@ -147,17 +143,17 @@ main p {
     font-size: 14px;
     width: 100%;
   }
-  
+
   .tickets-table th,
   .tickets-table td {
     text-align: center;
     margin: 0;
   }
-  
+
   .tickets-table th {
     padding: 10px 5px;
   }
-  
+
   .tickets-table td {
     padding: 15px 0;
   }
@@ -184,17 +180,17 @@ main p {
     font-size: 12px;
     width: 100%;
   }
-  
+
   .tickets-table th,
   .tickets-table td {
     text-align: center;
     margin: 0;
   }
-  
+
   .tickets-table th {
     padding: 10px 5px;
   }
-  
+
   .tickets-table td {
     padding: 15px 0;
   }
