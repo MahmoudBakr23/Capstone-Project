@@ -759,11 +759,18 @@ footer {
 
   .inspiring-path {
     padding: 1rem 0;
+    margin: 0;
   }
 
   .inspiration-items {
     display: block;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    width: 81.5%;
+    text-align: center;
+  }
+
+  .inspire {
+    margin: 0;
   }
 
   .inspire h4,
@@ -771,6 +778,7 @@ footer {
   .inspire p {
     font-size: 0.9rem;
     padding: 0.4rem 0;
+    text-align: start;
   }
 
   .inspiration-grid {
@@ -786,8 +794,8 @@ footer {
 
   .inspiration-items .absolute-img {
     position: relative;
-    left: 65px;
-    bottom: 80px;
+    right: 70px;
+    bottom: 90px;
     z-index: -1;
   }
 
