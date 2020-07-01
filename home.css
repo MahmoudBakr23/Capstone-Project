@@ -104,7 +104,7 @@ nav {
 .main {
   background: linear-gradient(rgba(212, 212, 212, 0.9), rgba(212, 212, 212, 0.9)), url(./Images/main-bg-4.png);
   background-position: center center;
-  background-size: small;
+  background-size: initial;
 }
 
 main .fa-bars {
@@ -187,7 +187,7 @@ main .fa-bars {
   padding: 2rem 10rem;
   background: url(./Images/bg-3.png);
   background-position: center center;
-  background-size: small;
+  background-size: initial;
 }
 
 .path-grid {
@@ -419,7 +419,7 @@ footer {
     padding: 4rem 10rem;
     background: url(./Images/bg-3.png);
     background-position: center center;
-    background-size: small;
+    background-size: initial;
   }
 
   .path-grid {
@@ -554,7 +554,7 @@ footer {
     padding: 2rem 1rem;
     background: url(./Images/bg-3.png);
     background-position: center center;
-    background-size: small;
+    background-size: initial;
   }
 
   .path-grid {
@@ -713,7 +713,7 @@ footer {
     padding: 2rem 1rem;
     background: url(./Images/bg-3.png);
     background-position: center center;
-    background-size: small;
+    background-size: initial;
   }
 
   .path-grid {
