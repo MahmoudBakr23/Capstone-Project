@@ -47,12 +47,15 @@ main {
 .the-game {
   background-color: #272a31;
   height: 175px;
-  padding: 2rem 0.1rem;
+  padding: 2.2rem 0;
+  width: 520px;
 }
 
 .the-game iframe {
-  margin-top: -1.75rem;
+  margin-top: -2.2rem;
   border: 5px dashed #ec5242;
+  width: 520px;
+  height: 175px;
 }
 
 .important-game {
@@ -115,20 +118,8 @@ main {
   }
 
   .the-game iframe {
-    margin-top: -1.75rem;
+    margin-top: -1.5rem;
     width: 550px;
-  }
-
-  .img-container {
-    width: 450px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .img-container img {
-    width: 800px;
-    height: 600px;
   }
 
   .footer-details p {

@@ -102,11 +102,7 @@ nav {
 }
 
 .main {
-  background: linear-gradient(
-      rgba(212, 212, 212, 0.9),
-      rgba(212, 212, 212, 0.9)
-    ),
-    url(./Images/main-bg-4.png);
+  background: linear-gradient(rgba(212, 212, 212, 0.9), rgba(212, 212, 212, 0.9)), url(./Images/main-bg-4.png);
   background-position: center center;
   background-size: small;
 }
