@@ -103,7 +103,7 @@ main {
 }
 
 .course-content:hover {
-  transform: scaleY(1.2) scaleX(1.1);
+  transform: scaleY(1.2) scaleX(1.05);
   background-color: #d3d3d3;
 }
 
@@ -141,6 +141,10 @@ main {
   background-color: #d3d3d3;
   padding: 0.5rem 2rem;
   font-weight: 600;
+}
+
+.about-path {
+  display: none;
 }
 
 .additional {
@@ -393,6 +397,28 @@ main {
   .course-items {
     grid-column: 1/ -1;
     padding: 0.5rem;
+  }
+
+  .about-path {
+    display: block;
+    grid-column: 1/ -1;
+    grid-row: 4;
+    background-color: #ec5242;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .about-path a {
+    text-decoration: none;
+    color: #272a31;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 5px;
+    font-size: 16px;
+  }
+
+  .third,
+  .fourth {
+    display: none;
   }
 
   .additional {

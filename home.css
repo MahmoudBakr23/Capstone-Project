@@ -242,21 +242,12 @@ main .fa-bars {
 }
 
 .path-items:hover {
-  transform: scaleY(1.2) scaleX(1.1);
+  transform: scaleY(1.2) scaleX(1.05);
   background-color: #272a31;
 }
 
 .path-footer {
-  grid-area: 3/ -4;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
-.path-footer a {
-  color: #d3d3d3;
-  font-family: 'Lato', sans-serif;
-  word-spacing: 5px;
-  font-size: 16px;
+  display: none;
 }
 
 .inspiring-path {
@@ -745,8 +736,25 @@ footer {
   }
 
   .path-footer {
+    display: block;
     grid-column: 1/ -1;
-    grid-row: 7;
+    grid-row: 5;
+    background-color: #ec5242;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .path-footer a {
+    color: #d3d3d3;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 5px;
+    font-size: 16px;
+  }
+
+  .maths,
+  .blender {
+    display: none;
   }
 
   .inspiring-path {
