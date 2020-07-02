@@ -147,12 +147,6 @@
     font-size: 16px;
   }
 
-  .cert-headline i {
-    transform: rotate(90deg);
-    margin: 0 7rem;
-    color: #ec5242;
-  }
-
   .img-container {
     width: 300px;
     height: 200px;

@@ -440,12 +440,12 @@ main {
 
   .unity,
   .c-sharp {
-    padding: 1rem 2rem;
+    padding: 3rem 2rem;
   }
 
   .unity h2,
   .c-sharp h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 0 4rem;
   }
 
@@ -453,4 +453,26 @@ main {
     font-size: 12px;
     margin: 0;
   }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 400px) {
+  .additional {
+    padding: 1rem 2rem;
+  }
+
+  .additional-p {
+    text-align: center;
+  }
+  
+  .unity,
+  .c-sharp {
+    padding: 3rem 2rem;
+  }
+
+  .unity h2,
+  .c-sharp h2 {
+    font-size: 1rem;
+    padding: 0 4rem;
+  }
+
 }
