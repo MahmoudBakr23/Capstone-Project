@@ -4,7 +4,11 @@
 }
 
 main {
-  background: linear-gradient(rgba(212, 212, 212, 0.9), rgba(212, 212, 212, 0.9)), url(./Images/main-bg-4.png);
+  background: linear-gradient(
+      rgba(212, 212, 212, 0.9),
+      rgba(212, 212, 212, 0.9)
+    ),
+    url(./Images/main-bg-4.png);
   background-position: center center;
   background-size: initial;
 }
@@ -187,7 +191,8 @@ main {
 
 .unity {
   text-align: center;
-  background: linear-gradient(rgba(241, 9, 9, 0.7), rgba(241, 9, 9, 0.7)), url(./Images/unity-learn.webp);
+  background: linear-gradient(rgba(241, 9, 9, 0.7), rgba(241, 9, 9, 0.7)),
+    url(./Images/unity-learn.webp);
   background-size: cover;
   background-position: center center;
   padding: 3rem 10rem;
@@ -204,7 +209,8 @@ main {
 
 .c-sharp {
   text-align: center;
-  background: linear-gradient(rgba(241, 9, 9, 0.7), rgba(241, 9, 9, 0.7)), url(./Images/c-sharp.jpg);
+  background: linear-gradient(rgba(241, 9, 9, 0.7), rgba(241, 9, 9, 0.7)),
+    url(./Images/c-sharp.jpg);
   background-size: cover;
   background-position: center center;
   padding: 3rem 10rem;
@@ -463,7 +469,7 @@ main {
   .additional-p {
     text-align: center;
   }
-  
+
   .unity,
   .c-sharp {
     padding: 3rem 2rem;
@@ -474,5 +480,4 @@ main {
     font-size: 1rem;
     padding: 0 4rem;
   }
-
 }
