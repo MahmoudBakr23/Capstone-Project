@@ -1,7 +1,7 @@
 main {
   text-align: center;
   background-color: #ebebeb;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 main h1,
@@ -143,6 +143,15 @@ main p {
 }
 
 @media only screen and (min-width: 533px) and (max-width: 768px) {
+  main {
+    padding: 1rem 0;
+  }
+
+  main .fa-bars {
+    text-align: start;
+    margin-left: 0.5rem;
+  }
+
   .tickets-headline {
     font-size: 14px;
     padding: 1rem;
@@ -184,6 +193,15 @@ main p {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 532px) {
+  main {
+    padding: 1rem 0;
+  }
+
+  main .fa-bars {
+    text-align: start;
+    margin-left: 0.5rem;
+  }
+  
   .tickets-headline {
     font-size: 14px;
     padding: 0.5rem 1rem;
