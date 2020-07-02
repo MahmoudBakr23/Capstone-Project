@@ -375,7 +375,7 @@ footer {
   color: #272a31;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1138px) {
+@media only screen and (min-width: 769px) and (max-width: 1250px) {
   .second-navbar {
     justify-content: space-evenly;
   }
