@@ -13,7 +13,7 @@ This is the HTML &amp; CSS Capstone Project
 - HTML
 - CSS3
 
-[Live Demo Link](https://xenodochial-tereshkova-e00530.netlify.app/)
+[Live Demo Link](https://vigilant-almeida-1cb4b9.netlify.app/)
 
 **Design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)**
 
