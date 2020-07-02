@@ -14,6 +14,7 @@ main p {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   color: #272a31;
+  margin-top: 1rem;
 }
 
 .tickets-headline {
@@ -66,6 +67,24 @@ main p {
 
 .tickets-table td:hover {
   background-color: #d3d3d3;
+}
+
+.rotated {
+  display: inline-block;
+  background-color: #ec5242;
+  padding: 1.13rem 1.4rem;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 3rem 0;
+  vertical-align: center;
+}
+
+.reverse {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  font-size: 1.5rem;
 }
 
 .sign {
