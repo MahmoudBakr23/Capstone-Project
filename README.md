@@ -15,6 +15,8 @@ This is the HTML &amp; CSS Capstone Project
 
 [Live Demo Link](https://xenodochial-tereshkova-e00530.netlify.app/)
 
+**Design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)**
+
 ## Getting Started
 
 **1) Clone this Github repository.**
