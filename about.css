@@ -196,7 +196,7 @@ main {
 .unity h2,
 .c-sharp h2 {
   font-size: 2rem;
-  padding: 0 3rem;
+  padding: 0 1rem;
   font-family: "Lato", sans-serif;
   color: #d3d3d3;
   width: 100%;
@@ -286,8 +286,8 @@ main {
 
   .unity h2,
   .c-sharp h2 {
-    font-size: 2rem;
-    padding: 0 3rem;
+    font-size: 1.5rem;
+    padding: 0 2rem;
   }
 
   .footer-about-details p {
